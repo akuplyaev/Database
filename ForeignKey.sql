@@ -3,6 +3,8 @@ GO
 ALTER TABLE Tasks
 ADD CONSTRAINT FK_Tasks_Projects
 FOREIGN KEY (id_project) REFERENCES Projects (id_project);
+        ON DELETE CASCADE
+		ON UPDATE CASCADE
 GO
 ALTER TABLE TasksTags
 	ADD CONSTRAINT FK_Tasks_TaskTags FOREIGN KEY (id_task) 
