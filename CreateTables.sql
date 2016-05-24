@@ -15,8 +15,9 @@ id_project int not null
 );
 GO
 create table Tags(
-id_tag int identity PRIMARY KEY,
-name_tags char(5)
+id_tag  int identity PRIMARY KEY,
+name_tag char(5)
+
 );
 GO
 create table TasksTags (
