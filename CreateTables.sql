@@ -15,11 +15,12 @@ id_project int not null
 );
 GO
 create table Tags(
-name_tag char(10) PRIMARY KEY not null
+id_tag  int identity PRIMARY KEY,
+name_tag char(5)
 );
 GO
 create table TasksTags (
 id_task int not null,
-name_tag char(10) not null,
-CONSTRAINT pk_TasksTags PRIMARY KEY (id_task,name_tag)
+id_tag int not null,
+CONSTRAINT pk_TasksTags PRIMARY KEY (id_task,id_tag)
 )
