@@ -10,7 +10,7 @@ id_task int identity PRIMARY KEY,
 name_task char(10) not null,
 descript text not null,
 mark bit not null,
-deadline date not null,
+deadline date,
 id_project int not null
 );
 GO
