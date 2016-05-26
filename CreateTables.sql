@@ -2,14 +2,14 @@ use KuplyaevIntensive
 GO
 create table Projects (
 id_project int identity PRIMARY KEY,
-name_project char(45) not null
+name_project char(45) UNIQUE
 );
 GO
 create table Tasks (
 id_task int identity PRIMARY KEY,
 name_task char(45) not null,
-descript text not null,
-mark bit not null,
+descript text,
+mark bit ,
 deadline date,
 id_project int not null
 );
