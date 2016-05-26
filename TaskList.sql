@@ -20,7 +20,8 @@ while @@FETCH_STATUS = 0
 						'description',
 						  0,
 						  NULL,
-						 @id_project)
+						 @id_project,
+						 NULL)
 		fetch next from some_cursor INTO @string_var
 	END	
 CLOSE some_cursor				
