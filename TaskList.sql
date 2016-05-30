@@ -1,9 +1,9 @@
-use KuplyaevIntensive
+п»їuse KuplyaevIntensive
 GO
-IF (NOT EXISTS (Select name_project from Projects where name_project='Список задач')) 
+IF (NOT EXISTS (Select name_project from Projects where name_project='РЎРїРёСЃРѕРє Р·Р°РґР°С‡')) 
 	BEGIN
 	INSERT INTO Projects
-			values ('Список задач')
+			values ('РЎРїРёСЃРѕРє Р·Р°РґР°С‡')
     END
 declare some_cursor cursor
 for
@@ -11,7 +11,7 @@ select  name_project from Projects WHERE name_project not in (Select name_task f
 open some_cursor
 declare  @string_var varchar(45)
 declare  @id_project int
-set @id_project=(Select id_project from Projects where name_project='Список задач')
+set @id_project=(Select id_project from Projects where name_project='РЎРїРёСЃРѕРє Р·Р°РґР°С‡')
 fetch next from some_cursor INTO   @string_var			
 while @@FETCH_STATUS = 0
 	BEGIN			
