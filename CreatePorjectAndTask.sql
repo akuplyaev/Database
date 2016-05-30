@@ -1,11 +1,11 @@
-use KuplyaevIntensive
+п»їuse KuplyaevIntensive
 GO
-IF (NOT EXISTS (Select name_project from Projects where name_project='Интенсив')) 
+IF (NOT EXISTS (Select name_project from Projects where name_project='РРЅС‚РµРЅСЃРёРІ')) 
 	BEGIN
 		INSERT INTO Projects
-				values ('Интенсив')
+				values ('РРЅС‚РµРЅСЃРёРІ')
 		INSERT INTO Tasks 
-				values ('Изучение sql',
+				values ('РР·СѓС‡РµРЅРёРµ sql',
 						'description',
 						0,
 						GETDATE()+3,
@@ -14,11 +14,11 @@ IF (NOT EXISTS (Select name_project from Projects where name_project='Интенсив')
 ELSE
 	BEGIN
 	INSERT INTO Tasks 
-				values ('Изучение sql',
+				values ('РР·СѓС‡РµРЅРёРµ sql',
 						'description',
 						0,
 						GETDATE()+3,
-						(select id_project from Projects where name_project='Интенсив'))
+						(select id_project from Projects where name_project='РРЅС‚РµРЅСЃРёРІ'))
 	END	
 	
 	
