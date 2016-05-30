@@ -1,5 +1,5 @@
-use KuplyaevIntensive
+п»їuse KuplyaevIntensive
 GO
 update Projects 
-SET name_project='Интесив-Купляев А.В'
-where name_project='Интенсив'
+SET name_project='РРЅС‚РµРЅСЃРёРІ-РљСѓРїР»СЏРµРІ Рђ.Р’.'
+where name_project='РРЅС‚РµРЅСЃРёРІ'
